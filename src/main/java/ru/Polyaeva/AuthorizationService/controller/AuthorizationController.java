@@ -7,7 +7,6 @@ import ru.Polyaeva.AuthorizationService.model.Authorities;
 import ru.Polyaeva.AuthorizationService.model.User;
 import ru.Polyaeva.AuthorizationService.service.AuthorizationService;
 
-
 import java.util.List;
 
 @RestController

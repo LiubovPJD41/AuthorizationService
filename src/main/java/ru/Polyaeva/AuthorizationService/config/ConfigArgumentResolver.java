@@ -5,7 +5,6 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import ru.Polyaeva.AuthorizationService.controller.UserArgumentResolver;
 
-
 import java.util.List;
 
 @Configuration

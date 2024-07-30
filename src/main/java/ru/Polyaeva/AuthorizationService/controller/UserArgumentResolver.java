@@ -9,7 +9,6 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 import ru.Polyaeva.AuthorizationService.model.User;
 
-
 public class UserArgumentResolver implements HandlerMethodArgumentResolver {
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
@@ -24,6 +23,6 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
         HttpServletRequest request = webRequest.getNativeRequest(HttpServletRequest.class);
         String user = request.getParameter("user");
         String password = request.getParameter("password");
-        return new User(user, password, null);
+        return new User("new" + user, "new" + password);
     }
 }
