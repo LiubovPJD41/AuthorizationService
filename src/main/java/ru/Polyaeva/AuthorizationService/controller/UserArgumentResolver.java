@@ -23,6 +23,6 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
         HttpServletRequest request = webRequest.getNativeRequest(HttpServletRequest.class);
         String user = request.getParameter("user");
         String password = request.getParameter("password");
-        return new User("new" + user, "new" + password);
+        return new User("new" + user, "new" + password, null);
     }
 }
